@@ -1,0 +1,32 @@
+.header-section {
+  height: 74px;
+  background: #000;
+}
+
+.header-logo {
+  max-width: 95px;
+}
+
+.header-navbar__item:not(:last-child) {
+  margin-right: 40px;
+}
+
+.header-btn__icon {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  transition: 0.4s;
+  border-radius: 3px;
+
+  &:hover {
+    background: rgba(255, 255, 255, 0.2);
+  }
+
+  i {
+    font-size: 2rem;
+  }
+}
+
+.header-btn__icon:not(:last-child) {
+  margin-right: 10px;
+}

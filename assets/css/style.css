@@ -1,0 +1,187 @@
+* {
+  font-family: "Quicksand", sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: #333333;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* atomic */
+.w-100 {
+  width: 100%;
+}
+
+.h-100 {
+  height: 100%;
+}
+
+.img-reset {
+  display: block;
+  max-width: 100%;
+}
+
+.object-cover {
+  object-fit: cover;
+}
+
+.object-contain {
+  object-fit: contain;
+}
+
+.hidden {
+  display: none;
+}
+
+.block {
+  display: block;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.relative {
+  position: relative;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.top-0 {
+  top: 0;
+}
+
+.left-0 {
+  left: 0;
+}
+
+.horizon-center {
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.vertical-center {
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.line-through {
+  text-decoration: line-through;
+}
+
+.decoration-none {
+  text-decoration: none;
+}
+
+.m-auto {
+  margin: auto;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.capitalize {
+  text-transform: capitalize;
+}
+
+.text-white {
+  color: #fff;
+}
+
+.text-14 {
+  font-size: 14px;
+}
+
+@media (max-width: 749px) {
+  .container-1k2 {
+    padding: 0 22px;
+  }
+
+  .block\:sm {
+    display: block;
+  }
+
+  .d-none\:sm {
+    display: none;
+  }
+}
+.header-section {
+  height: 74px;
+  background: #000;
+}
+
+.header-logo {
+  max-width: 95px;
+}
+
+.header-navbar__item:not(:last-child) {
+  margin-right: 40px;
+}
+
+.header-btn__icon {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  transition: 0.4s;
+  border-radius: 3px;
+}
+.header-btn__icon:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+.header-btn__icon i {
+  font-size: 2rem;
+}
+
+.header-btn__icon:not(:last-child) {
+  margin-right: 10px;
+}
+
+/*# sourceMappingURL=style.css.map */

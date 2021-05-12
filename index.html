@@ -1,26 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <!-- Tools -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
-  <!-- Bootstrap 4.5: https://getbootstrap.com/docs/4.5/getting-started/introduction/ -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" />
-  <!-- Tools end -->
-  <!-- Local file -->
-  <link rel="stylesheet" href="./assets/css/style.scss">
-  <!-- Local file end -->
-</head>
-<body>
-  
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap"
+      rel="stylesheet"
+    />
 
-  <!-- Tool script -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous"></script>
-  <script src="./assets/js/main.js"></script>
-</body>
+    <!-- Tools -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+      integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
+      crossorigin="anonymous"
+    />
+    <!-- Bootstrap 4.5: https://getbootstrap.com/docs/4.5/getting-started/introduction/ -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+      integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+    <!-- Tools end -->
+    <!-- Local file -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <!-- Local file end -->
+  </head>
+  <body>
+    <header class="header-section">
+      <div class="container-fluid h-100">
+        <div class="row h-100">
+          <div class="col-lg-12 flex items-center justify-between">
+            <a href="index.html" class="header-logo block">
+              <img src="./assets/img/logo.png" alt="" class="object-cover">
+            </a>
+            <ul class="header-navbar flex">
+              <li class="header-navbar__item text-14">
+                <a class="text-white" href="index.html">Trang Chủ</a>
+              </li>
+              <li class="header-navbar__item text-14">
+                <a class="text-white" href="">Sản Phẩm Mới</a>
+              </li>
+              <li class="header-navbar__item text-14">
+                <a class="text-white" href="">Product Views</a>
+              </li>
+              <li class="header-navbar__item text-14">
+                <a class="text-white" href="">Blog</a>
+              </li>
+              <li class="header-navbar__item text-14">
+                <a class="text-white" href="">Giới Thiệu</a>
+              </li>
+              <li class="header-navbar__item text-14">
+                <a class="text-white" href="">Liên Hệ</a>
+              </li>
+            </ul>
+            <div class="header-btn flex">
+              <div class="header-btn__icon header-btn__icon--cart flex items-center justify-center">
+                <i class="fas fa-shopping-cart text-white"></i>
+              </div>
+              <div class="header-btn__icon header-btn__icon--search flex items-center justify-center">
+                <i class="fas fa-search text-white"></i>
+              </div>
+              <div class="header-btn__icon header-btn__icon--account flex items-center justify-center">
+                <i class="far fa-user text-white"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+
+
+    <!-- Tool script -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+      integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./assets/js/main.js"></script>
+  </body>
 </html>

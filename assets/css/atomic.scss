@@ -1,0 +1,104 @@
+/* atomic */
+.w-100 {
+  width: 100%;
+}
+.h-100 {
+  height: 100%;
+}
+.img-reset {
+  display: block;
+  max-width: 100%;
+}
+.object-cover {
+  object-fit: cover;
+}
+.object-contain {
+  object-fit: contain;
+}
+.hidden {
+  display: none;
+}
+.block {
+  display: block;
+}
+.flex {
+  display: flex;
+}
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.justify-center {
+  justify-content: center;
+}
+.justify-between {
+  justify-content: space-between;
+}
+.items-center {
+  align-items: center;
+}
+.flex-wrap {
+  flex-wrap: wrap;
+}
+.relative {
+  position: relative;
+}
+.absolute {
+  position: absolute;
+}
+.top-0 {
+  top: 0;
+}
+.left-0 {
+  left: 0;
+}
+.horizon-center {
+  left: 50%;
+  transform: translateX(-50%);
+}
+.vertical-center {
+  top: 50%;
+  transform: translateY(-50%);
+}
+.underline {
+  text-decoration: underline;
+}
+.line-through {
+  text-decoration: line-through;
+}
+.decoration-none {
+  text-decoration: none;
+}
+.m-auto {
+  margin: auto;
+}
+.uppercase {
+  text-transform: uppercase;
+}
+.capitalize {
+  text-transform: capitalize;
+}
+.text-white {
+  color: #fff;
+}
+
+$sizes: 14;
+
+@each $size in $sizes {
+  .text-#{$size} {
+    font-size: $size + px;
+  }
+}
+
+@media (max-width: 749px) {
+  .container-1k2 {
+    padding: 0 22px;
+  }
+  .block\:sm {
+    display: block;
+  }
+  .d-none\:sm {
+    display: none;
+  }
+}
