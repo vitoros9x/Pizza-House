@@ -1,0 +1,42 @@
+
+
+//====== My variable =========
+
+
+//====== My variable end ============
+
+//====== Multi CSS =========
+@mixin flexCenter() {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin absolute($dir) {
+  position: absolute;
+  @if $dir == 'vertical' {
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  @if $dir == 'horizon' {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+}
+
+//====== Multi CSS end ==========
+
+// ===== Start CSS =============
+html {
+  font-size: 62.5%;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+// ===== Start CSS end =============
+
+// ===== Genaral CSS =============
