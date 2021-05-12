@@ -53,6 +53,12 @@
 .left-0 {
   left: 0;
 }
+.right-0 {
+  right: 0;
+}
+.bottom-0 {
+  bottom: 0;
+}
 .horizon-center {
   left: 50%;
   transform: translateX(-50%);
@@ -79,7 +85,7 @@
 .capitalize {
   text-transform: capitalize;
 }
-.text-white {
+.white-text {
   color: #fff;
 }
 
