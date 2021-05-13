@@ -89,7 +89,7 @@
   color: #fff;
 }
 
-$sizes: 14;
+$sizes: 12, 14, 16, 31;
 
 @each $size in $sizes {
   .text-#{$size} {
