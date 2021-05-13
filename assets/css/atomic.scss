@@ -1,4 +1,7 @@
 /* atomic */
+.bold {
+  font-weight: 700;
+}
 .w-100 {
   width: 100%;
 }
@@ -97,14 +100,3 @@ $sizes: 12, 14, 16, 31;
   }
 }
 
-@media (max-width: 749px) {
-  .container-1k2 {
-    padding: 0 22px;
-  }
-  .block\:sm {
-    display: block;
-  }
-  .d-none\:sm {
-    display: none;
-  }
-}
