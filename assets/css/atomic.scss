@@ -98,7 +98,7 @@
   margin: 0 auto;
 }
 
-$sizes: 12, 14, 16, 18, 31;
+$sizes: 12, 14, 16, 18, 20, 31;
 
 @each $size in $sizes {
   .text-#{$size} {

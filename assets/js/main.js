@@ -28,4 +28,23 @@ $(document).ready(() => {
       nextArrow: '<i class="fas fa-chevron-right next-arrow"></i>'
     }
   );
+
+  $('.feedback-slider').slick(
+    {
+      slidesToShow: 3,
+      prevArrow: '<i class="fas fa-chevron-left prev-arrow"></i>',
+      nextArrow: '<i class="fas fa-chevron-right next-arrow"></i>',
+      centerMode: true,
+      centerPadding: 0
+    }
+  );
+
+  $('.logos-slider').slick(
+    {
+      arrows: false,
+      slidesToShow: 6,
+      dots: true,
+      infinite: false
+    }
+  );
 });

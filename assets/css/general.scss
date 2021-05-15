@@ -1,7 +1,34 @@
+.container {
+  max-width: 1200px;
+}
+
 .line {
   width: 100%;
   height: 1px;
   background: #e1e3e4;
+}
+
+.line-dash {
+  width: 68px;
+  height: 2px;
+  border-top: 2px dashed $primary-color;
+  padding-bottom: 20px;
+  position: relative;
+  transition: 00.2s;
+
+  &::after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 0;
+    height: 2px;
+    left: 0;
+    top: 2px;
+    background: $primary-color;
+    transition: 00.2s;
+    transform-origin: 50% 50%;
+    transform: translateX(-50%);
+  }
 }
 
 .title-font {
@@ -34,35 +61,56 @@
   padding: 0 18px;
   display: flex;
   align-items: center;
+  transition: 0.4s;
+
+  &:hover {
+    background: $primary-color;
+    color: #fff;
+
+    .plus {
+      display: none;
+    }
+
+    i {
+      display: block;
+      margin-left: 9.5px;
+      font-size: 20px;
+    }
+  }
 }
 
 .product {
   background: #fff;
 }
 
-.product-slider {
-  .slick-arrow {
-    font-size: 30px;
-    background: #fff;
-    width: 45px;
-    height: 45px;
-    border-radius: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    top: calc(100% + 30px);
-  }
+.slick-arrow {
+  font-size: 30px;
+  background: #fff;
+  width: 45px;
+  height: 45px;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: calc(100% + 30px);
+  transition: 0.2s;
+  cursor: pointer;
 
-  .prev-arrow {
-    left: 50%;
-    transform: translateX(-30px);
+  &:hover {
+    background: $primary-color;
+    color: #fff;
   }
+}
 
-  .next-arrow {
-    left: 50%;
-    transform: translateX(30px);
-  }
+.prev-arrow {
+  left: 50%;
+  transform: translateX(calc(-50% - 35px));
+}
+
+.next-arrow {
+  left: 50%;
+  transform: translateX(calc(-50% + 35px));
 }
 
 .product-img {
@@ -78,12 +126,15 @@
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 1;
   overflow: hidden;
-}
+  transition: 0.2s;
 
-.product-price {
-
+  &:hover {
+    color: $primary-color;
+  }
 }
 
 .product-order {
-
+  .plus {
+    font-size: 10px;
+  }
 }
