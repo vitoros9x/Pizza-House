@@ -55,30 +55,33 @@
   padding: 5px 20px;
 }
 
-.header-cart__modal {
-  width: 448px;
-  height: 300px;
-  background: #fff;
+.header-modal {
   top: 100%;
-  right: 20px;
+  right: 15px;
   padding: 20px 0;
   cursor: default;
   border-radius: 3px;
   transition: 00.4s;
-  background: rgb(252, 191, 191);
-  z-index: 1;
+  background: #fff;
   transform: scale(0);
 
   &::before {
     content: "";
     display: block;
     position: absolute;
-    top:  -4px;
-    right: 23%;
+    top: -4px;
     width: 20px;
     height: 20px;
     background: #fff;
     transform: rotate(45deg);
+  }
+}
+
+.header-cart__modal {
+  width: 448px;
+
+  &::before {
+    right: 24%;
   }
 }
 
@@ -98,7 +101,6 @@
 }
 
 .header-cart__no-product {
-
   i {
     font-size: 4rem;
     padding: 20px 0 10px;
@@ -106,7 +108,7 @@
 }
 
 .header-cart__payment {
-padding: 20px;
+  padding: 20px;
 }
 
 .header-cart__payment-total {
@@ -120,5 +122,58 @@ padding: 20px;
 .header-cart__btn {
   height: 40px;
   flex: 1;
-  background: $primary-color  ;
+  background: $primary-color;
+}
+
+.header-btn__icon-search {
+}
+
+.header-search__modal {
+  width: 400px;
+  padding: 20px 15px;
+
+  &::before {
+    right: 15%;
+  }
+}
+
+.header-search__title {
+  font-size: 17px;
+  margin-bottom: 10px;
+}
+
+.header-search__search-bar {
+  margin: 20px 0 10px;
+
+  input {
+    height: 45px;
+    padding: 0 45px 0 20px;
+    outline: none;
+  }
+
+  i {
+    font-size: 2.5rem;
+    right: 10px;
+  }
+}
+
+.header-account {
+  width: 278px;
+  padding: 20px 15px;
+
+  input {
+    height: 42px;
+    outline: none;
+    padding: 0 10px;
+  }
+
+  &::before {
+    right: 3.5%;
+  }
+}
+
+.header-account__login {
+  height: 42px;
+  background: $primary-color;
+  border-radius: 50px;
 }

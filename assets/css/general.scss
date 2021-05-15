@@ -3,3 +3,24 @@
   height: 1px;
   background: #e1e3e4;
 }
+
+.title-font {
+  font-family: 'Lobster', sans-serif;
+}
+
+.btn-primary {
+  font-size: 14px;
+  width: max-content;
+  height: 40px;
+  padding: 0 40px;
+  display: flex;
+  align-items: center;
+  background: $primary-color;
+  border-radius: 50px;
+  transition: 0.4s;
+
+  &:hover {
+    color: #fff;
+    background: $primary-color;
+  }
+}

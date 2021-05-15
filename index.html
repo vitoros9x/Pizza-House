@@ -11,11 +11,8 @@
       href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap"
       rel="stylesheet"
     />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
 
     <!-- Tools -->
     <link
@@ -79,7 +76,7 @@
             <div class="header-btn flex">
               <div class="header-btn__icon header-btn__icon-cart flex items-center justify-center">
                 <i class="fas fa-shopping-cart text-white"></i>
-                <div class="header-cart__modal absolute">
+                <div class="header-modal header-cart__modal absolute">
                   <div class="header-cart__name text-16 flex-center bold">Giỏ hàng</div>
                   <div class="header-cart__list">
                     <div class="header-cart__no-product">
@@ -102,9 +99,33 @@
               </div>
               <div class="header-btn__icon header-btn__icon-search flex items-center justify-center">
                 <i class="fas fa-search text-white"></i>
+                <div class="header-modal header-search__modal absolute">
+                  <h4 class="header-search__title text-center bold uppercase">Tìm kiếm</h4>
+                  <div class="line"></div>
+                  <div class="header-search__search-bar relative">
+                    <input type="text" placeholder="Tìm kiếm sản phẩm ..." class="block w-100 text-14 bold">
+                    <i class="fas fa-search absolute vertical-center"></i>                  
+                  </div>
+                </div>
               </div>
               <div class="header-btn__icon header-btn__icon-account flex items-center justify-center">
                 <i class="far fa-user text-white"></i>
+                <div class="header-modal header-account absolute">
+                  <h4 class="header-account__title uppercase bold text-center">Đăng nhập tài khoản</h4>
+                  <div class="text-12 text-center mb-3">Nhập mail và mật khẩu của bạn</div>
+                  <input type="text" class="block text-12 w-100 mb-3" placeholder="Email">
+                  <input type="text" class="block text-12 w-100" placeholder="Mật khẩu">
+                  <p class="header-account__description text-12 text-center">This site is protected by reCAPTCHA and the Google Privacy Policy and Terms of Service apply.</p>
+                  <a href="" class="header-account__login bold block text-14 flex-center mb-4">Đăng nhập</a>
+                  <div class="text-12 text-center mb-3">
+                    Khách hàng mới? 
+                    <a href=""  class="text-red">Tạo tài khoản</a>
+                  </div>
+                  <div class="text-12 text-center ">
+                    Quên mật khẩu? 
+                    <a href=""  class="text-red">Khôi phục mật khẩu</a>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -112,6 +133,73 @@
       </div>
     </header>
 
+    <section class="body">
+      <section class="banner">
+        <div class="banner-slider">
+          <div class="banner-slider__item">
+            <div class="banner-slider__container">
+              <img src="./assets/img/home_banner/slideshow_1.jpg" alt="" class="object-cover">
+            </div>
+          </div>
+          <div class="banner-slider__item">
+            <div class="banner-slider__container">
+              <img src="./assets/img/home_banner/slideshow_2.jpg" alt="" class="object-cover">
+            </div>
+          </div>
+          <div class="banner-slider__item">
+            <div class="banner-slider__container">
+              <img src="./assets/img/home_banner/slideshow_3.jpg" alt="" class="object-cover">
+            </div>
+          </div>
+          <div class="banner-slider__item">
+            <div class="banner-slider__container">
+              <img src="./assets/img/home_banner/slideshow_4.jpg" alt="" class="object-cover">
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="welcome">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6">
+              <a href="" class="welcome-img block m-0-auto">
+                <img src="./assets/img/home_welcome/img_home_welcome.png" alt="">
+              </a>
+            </div>
+            <div class="col-md-6">
+              <div class="welcome-text">
+                <h3 class="welcome-heading title-font text-31 mb-5">Chào mừng đến với Pizza House</h3>
+                <div class="welcome-icons flex mb-5">
+                  <span class="welcome-icons__wrap flex-center"><i class="fas fa-pizza-slice "></i></span>
+                  <span class="welcome-icons__wrap flex-center"><i class="fas fa-hamburger "></i></span>
+                  <span class="welcome-icons__wrap flex-center"><i class="fas fa-bread-slice "></i></span>
+                </div>
+                <p class="text-14 mb-5">Các đầu bếp của chúng tôi làm việc 24/7 và sẵn sàng tiếp nhận du khách vào bất kỳ thời điểm nào trong ngày và đêm</p>
+                <a href="" class="welcome-btn btn-primary text-color">Đặt món ngay</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="box-img">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6">
+              <a href class="box-img__img block">
+                <img src="./assets/img/home_box-img/img_home_banner_1.jpg" alt="">
+              </a>
+            </div>
+            <div class="col-md-6">
+              <a href class="box-img__img block">
+                <img src="./assets/img/home_box-img/50bf7c59-b75b-403a-9904-70b9c0eb4e47.jpg" alt="">
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
 
 
     <!-- Tool script -->
