@@ -76,3 +76,43 @@
 .box-img__img {
   border: 8px solid $primary-color;
 }
+
+// today menu
+.today-menu {
+  min-height: 778px;
+  padding: 80px 0;
+}
+
+.today-menu__heading {
+
+}
+
+.today-menu__category {
+  margin: 45px 0;
+}
+
+// banner promotion
+.banner-promotion {
+  background-color: rgba(0, 0, 0, 0.5);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: 50%;
+  background-blend-mode: multiply;
+  min-height: 396px;
+}
+
+.banner-promotion__content {
+
+}
+
+.banner-promotion__title {
+
+}
+
+.banner-promotion__btn {
+  border: 2px solid #fff;
+
+  &:hover {
+    border: 2px solid $primary-color;
+  }
+}

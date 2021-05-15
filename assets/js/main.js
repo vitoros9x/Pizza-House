@@ -20,4 +20,12 @@ $(document).ready(() => {
       autoplay: true
     }
   );
+
+  $('.product-slider').slick(
+    {
+      slidesToShow: 3,
+      prevArrow: '<i class="fas fa-chevron-left prev-arrow"></i>',
+      nextArrow: '<i class="fas fa-chevron-right next-arrow"></i>'
+    }
+  );
 });

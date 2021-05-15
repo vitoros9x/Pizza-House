@@ -82,6 +82,9 @@
 .capitalize {
   text-transform: capitalize;
 }
+.primary-text-color {
+  color: $primary-color;
+}
 .text-color {
   color: $text-color;
 }
@@ -95,7 +98,7 @@
   margin: 0 auto;
 }
 
-$sizes: 12, 14, 16, 31;
+$sizes: 12, 14, 16, 18, 31;
 
 @each $size in $sizes {
   .text-#{$size} {
