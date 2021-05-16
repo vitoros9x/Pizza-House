@@ -44,6 +44,7 @@
   visibility: hidden;
   opacity: 0;
   transition: 0.4s;
+  z-index: 1;
 
   .header-navbar__item:hover & {
     visibility: visible;
@@ -64,6 +65,7 @@
   transition: 00.4s;
   background: #fff;
   transform: scale(0);
+  z-index: 1;
 
   &::before {
     content: "";

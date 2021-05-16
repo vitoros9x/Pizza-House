@@ -1,13 +1,15 @@
 var iconBtn = document.querySelectorAll('.header-btn__icon');
-[...iconBtn].forEach((item) => {
+[...iconBtn].forEach((item, index) => {
+  console.log(item.querySelector('.header-modal'))
   item.onclick = () => {
-    if (!item.classList.contains('modal-visible')) {
+    
+    if (item.querySelector('.header-modal').classList.contains('modal-visible')) {
+      item.querySelector('.header-modal').classList.remove('modal-visible')
+    } else {
       [...iconBtn].forEach((item) => {
         item.querySelector('.header-modal').classList.remove('modal-visible')
       });
       item.querySelector('.header-modal').classList.add('modal-visible');
-    } else {
-      item.querySelector('.header-modal').classList.remove('modal-visible')
     }
   }
 })
