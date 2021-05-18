@@ -91,15 +91,21 @@
 .today-menu {
   min-height: 778px;
   padding: 80px 0;
-}
 
-.today-menu__heading {
+  [class*=product-slider] {
+    display: none;
+  }
 
+  .product-slider--active {
+    display: block;
+  }
 }
 
 .today-menu__category {
   margin: 45px 0;
 }
+
+
 
 // banner promotion
 .banner-promotion {

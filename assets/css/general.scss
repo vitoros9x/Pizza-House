@@ -51,6 +51,14 @@
     color: #fff;
     background: $primary-color;
   }
+
+  &:active {
+    background: $primary-color !important;
+  }
+
+  &--active {
+    color: #fff;
+  }
 }
 
 // product
