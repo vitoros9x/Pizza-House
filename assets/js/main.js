@@ -28,6 +28,13 @@ var todaySliders = document.querySelectorAll('.today-menu .product-slider');
   }
 });
 
+var modalsHeader = document.querySelectorAll('.header-modal');
+[...modalsHeader].forEach((item) => {
+  item.onclick = (e) => {
+    e.stopPropagation();
+  }
+});
+
 $(document).ready(() => {
   $('.banner-slider').slick(
     {
